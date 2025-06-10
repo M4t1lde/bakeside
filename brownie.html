@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brownies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.recipe-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.recipe-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.recipe-header img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.recipe-info h2 {
+    color: #c94d3f;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.recipe-info p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ingredients, .instructions {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ingredients h3, .instructions h3 {
+    color: #c94d3f;
+    margin-top: 0;
+}
+
+.ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.instructions ol {
+    padding-left: 1.2rem;
+}
+
+.instructions li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.recipe-tips {
+    background-color: #f3d1c1;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.recipe-tips h3 {
+    color: #c94d3f;
+    margin-top: 0;
+}
+
+#linker a {
+    color: rgb(111, 96, 96);
+    text-decoration: none;
+}
+
+#linker a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .recipe-header {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .recipe-header img {
+    width: 100%;
+    max-width: 400px;
+    }
+
+    .recipe-content {
+    grid-template-columns: 1fr;
+    }
+}
+</style>
+<body>
+
+  <header>
+    <h1>Glutenfrie kaker</h1>
+  </header>
+  <div id="linker">
+    <p><a href="index.html">Hjem</a></p><p>Desserter</p><p>Om oss</p><p>Kontakt</p>
+  </div>
+
+  <section class="recipe-detail">
+    <div class="recipe-header">
+      <img src="bilder/brownies2.webp" alt="Glutenfrie brownies">
+      <div class="recipe-info">
+        <h2>Glutenfrie Brownies</h2>
+        <p>Saftige og sjokoladete brownies som er helt glutenfrie. Perfekt for alle som ønsker å nyte noe søtt uten gluten!</p>
+        <div class="recipe-meta">
+          <span>⏱️ 45 min</span>
+          <span>👥 8 stykker</span>
+          <span>🌟 Lett</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-content">
+      <div class="ingredients">
+        <h3>Ingredienser</h3>
+        <ul>
+          <li>200g mørk sjokolade</li>
+          <li>150g smør</li>
+          <li>200g sukker</li>
+          <li>3 egg</li>
+          <li>100g glutenfritt mel</li>
+          <li>30g kakao</li>
+          <li>1/2 ts salt</li>
+          <li>100g valnøtter (valgfritt)</li>
+        </ul>
+      </div>
+
+      <div class="instructions">
+        <h3>Fremgangsmåte</h3>
+        <ol>
+          <li>Forvarm ovnen til 180°C. Smør en form på ca. 20x20 cm.</li>
+          <li>Smelt sjokolade og smør forsiktig i vannbad eller mikrobølgeovn.</li>
+          <li>Rør inn sukker og la blandingen kjøle seg litt.</li>
+          <li>Pisk inn ett og ett egg.</li>
+          <li>Bland det glutenfrie melet, kakao og salt i en bolle.</li>
+          <li>Rør de tørre ingrediensene inn i sjokoladeblandingen.</li>
+          <li>Tilsett eventuelt hakka valnøtter.</li>
+          <li>Hell røren i formen og bak i 25-30 minutter.</li>
+          <li>La browniene kjøle seg helt før du skjærer dem opp.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe-tips">
+      <h3>Tips</h3>
+      <p>For ekstra saftig resultat, ikke overbak browniene. De skal fortsatt være litt myke i midten når du tar dem ut av ovnen. De stivner til når de kjøler seg.</p>
+    </div>
+  </section>
+
+</body>
+</html>

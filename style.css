@@ -3,18 +3,27 @@
     font-family: cake;
     src: url(fonts/cake.ttf);
 }
+@font-face {
+    font-family: food;
+    src: url(fonts/food.ttf);
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #fff8f2;
     color: #333;
+    background-color: #fff1e6;
 }
 
 header {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #f3d1c1;
-    padding: 2rem 1rem;
+    padding: 2.9rem 1rem 0rem 1rem;
     text-align: center;
+    flex-direction: row;
+    
 }
 
 header h1 {
@@ -23,13 +32,29 @@ header h1 {
     font-family: cake;
     letter-spacing: 10px;
 }
+header p {
+    font-family: food;
+    font-size: 60px;
+    margin-top: -5px;
+}
 
 #linker {
     background-color: #fff1e6;
     display: flex;
     justify-content: space-evenly;
-    color: rgb(88, 74, 74);
     font-size: 18px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration:none;
+    color: rgb(111, 96, 96);
+}
+
+#home {
+    color:rgb(167, 149, 149);
 }
 
 .showcase {
