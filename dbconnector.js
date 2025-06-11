@@ -1,7 +1,7 @@
 const mariadb = require('mariadb');
 
 const pool = mariadb.createPool({
-  host: '172.31.1.72',
+  host: '172.31.1.72', //ip-en til ubuntu vm
   user: 'matilde',
   password: '1487',
   database: 'bakeside',
