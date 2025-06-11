@@ -1,0 +1,22 @@
+const mariadb = require('mariadb');
+
+const pool = mariadb.createPool({
+  host: '172.31.1.72',
+  user: 'matilde',
+  password: '1487',
+  database: 'bakeside',
+  connectionLimit: 10
+});
+
+async function fåTags() {
+  let conn;
+  try {
+    conn = await pool.getConnection();
+    const rows = await conn.query('SELECT * FROM tags ORDER BY name');
+    return rows;
+  } finally {
+    if (conn) conn.release();
+  }
+}
+
+module.exports = {pool, fåTags};

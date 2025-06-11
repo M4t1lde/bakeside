@@ -1,0 +1,132 @@
+
+@font-face {
+    font-family: cake;
+    src: url(fonts/cake.ttf);
+}
+@font-face {
+    font-family: food;
+    src: url(fonts/food.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff8f2;
+    color: rgb(90, 76, 76);
+    background-color: #fff1e6;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3d1c1;
+    padding: 2.9rem 1rem 0rem 1rem;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+    font-family: cake;
+    letter-spacing: 10px;
+}
+header p {
+    font-family: food;
+    font-size: 60px;
+    margin-top: -5px;
+}
+
+#linker {
+    background-color: #fff1e6;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration:none;
+    color: rgb(111, 96, 96);
+}
+
+#home {
+    color:rgb(167, 149, 149);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #fff1e6;
+    text-align: center;
+}
+
+.showcase img {
+    max-width: 900px;
+    border-radius: 1rem;
+}
+
+.showcase h2 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: #d25f45;
+}
+
+.showcase p {
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 0.8rem 0 0.3rem;
+    color: #df6a50;
+}
+
+.recipe-card p {
+    margin: 0 1rem 1rem;
+    font-size: 0.9rem;
+    color: rgb(111, 96, 96);
+}
+
+.recipe-card a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #df6a50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recipe-card a:hover {
+    text-decoration: underline;
+}
