@@ -17,7 +17,7 @@ app.get('/api/tags', async (req, res) => { //for å sjekke tagsene! (fjerner sen
   }
 });
 
-app.get('/api/recipes', async (req, res) => {
+app.get('/api/recipes', async (req, res) => { //tag systemet.
   try {
     const conn = await pool.getConnection();
 
