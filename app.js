@@ -1,4 +1,4 @@
-console.log("Starter server..."); //skjekke om serveren starter! husk å starte fra vm-en.
+console.log("Starter server >:)"); //skjekke om serveren starter! husk å starte fra vm-en.
 
 const express = require('express');
 const { fåTags, pool } = require('./dbconnector');
