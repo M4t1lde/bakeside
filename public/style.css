@@ -160,3 +160,27 @@ a:hover {
   transform: scale(0.98);
 }
 
+
+.popular-recipe {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.popular-recipe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.popular-recipe a {
+  text-decoration: none;
+}
+
+.popular-recipe h2 {
+  color: #d25f45;
+  font-size: 27px;
+}
+

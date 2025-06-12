@@ -50,3 +50,17 @@ function visOppskrifter(oppskrifter) { //finner oppskrifter og gjør den klar fo
 }
 
 hentData(); //starter prossesen! :)
+
+
+
+fetch('/api/recipes/most-viewed')
+.then(res => res.json())
+.then(recipe => {
+  document.getElementById('mestbesøkt').innerHTML = `
+    <img src="${recipe.img}" alt="Bilde av ${recipe.title}">
+    <h2>Mest viste ${recipe.title}</h2>
+    <p>${recipe.description}</p>
+  `;
+  console.log(recipe.views)
+});
+

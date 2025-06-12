@@ -6,6 +6,13 @@
   <title>Gulrotkake</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const recipeId = 3; // ID fra databasen
+
+  fetch(`/api/recipes/${recipeId}/view`, {
+    method: 'POST'
+  });
+</script>
   <style>
     .recipe-detail {
       max-width: 800px;
