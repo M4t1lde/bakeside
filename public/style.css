@@ -52,6 +52,10 @@ a {
     color: rgb(111, 96, 96);
 }
 
+a:hover {
+    transform: scaleY(1.05);
+}
+
 #home {
     color:rgb(167, 149, 149);
 }

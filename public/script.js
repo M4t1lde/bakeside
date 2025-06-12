@@ -27,23 +27,25 @@ function visTags(tags, recipes) {
   tagsDiv.appendChild(resetBtn);
 }
 
+//hjelp fra chat.gpt tihi
+
 function visOppskrifter(oppskrifter) { //finner oppskrifter og gjør den klar for å legge til dem!
   const recipesDiv = document.getElementById('recipes');
   recipesDiv.innerHTML = '';
 
   oppskrifter.forEach(oppskrift => { //finner oppskrifter og legger dem inn i en div.
     console.log(oppskrift);
-    const div = document.createElement('div');
-    div.classList.add('recipe-card');
+    const a = document.createElement('a'); //byttet div med a (link) -> på flere steder!
+    a.classList.add('recipe-card');
+    a.href = oppskrift.link;
 
-    div.innerHTML = `
-      <img src="${oppskrift.img}" alt="${oppskrift.title}"> 
+    a.innerHTML = `
+      <img src="${oppskrift.img}" alt="${"Image of " + oppskrift.title}"> 
       <h3>${oppskrift.title}</h3>
       <p>${oppskrift.description}</p>
-      <a href="${oppskrift.link}">Se oppskrift</a>
     `; //henter all infoen fra databasen recepies for å legge inn oppskriftene på en fin måde.
 
-    recipesDiv.appendChild(div); //legger inn i div-en
+    recipesDiv.appendChild(a); //legger inn i div-en
   });
 }
 
