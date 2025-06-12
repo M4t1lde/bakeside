@@ -40,7 +40,7 @@ function visOppskrifter(oppskrifter) { //finner oppskrifter og gjør den klar fo
     a.href = oppskrift.link;
 
     a.innerHTML = `
-      <img src="${oppskrift.img}" alt="${"Image of " + oppskrift.title}"> 
+      <img src="${oppskrift.img}" alt="${"Bilde av " + oppskrift.title}"> 
       <h3>${oppskrift.title}</h3>
       <p>${oppskrift.description}</p>
     `; //henter all infoen fra databasen recepies for å legge inn oppskriftene på en fin måde.
