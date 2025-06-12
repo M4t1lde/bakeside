@@ -12,10 +12,10 @@ async function fåTags() {
   let conn;
   try {
     conn = await pool.getConnection();
-    const rows = await conn.query('SELECT * FROM tags ORDER BY name');
+    const rows = await conn.query('SELECT * FROM tags ORDER BY name'); //sorteres på alfabetisk rekkefølge
     return rows;
   } finally {
-    if (conn) conn.release();
+    if (conn) conn.release(); //slipper tilkoblingen tilbake til poolen
   }
 }
 
