@@ -77,7 +77,7 @@ app.post('/api/recipes/:id/view', async (req, res) => {
   }
 });
 
-app.get('/api/recipes/most-viewed', async (req, res) => {
+app.get('/api/recipes/most-viewed', async (req, res) => { //kms
   try {
     const conn = await pool.getConnection();
     const rows = await conn.query(`
