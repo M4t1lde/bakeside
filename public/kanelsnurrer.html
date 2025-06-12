@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanelsnurrer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p>B</p><h1>Glutenfrie kaker</h1><p>B</p>
+  </header>
+  <div id="linker">
+    <a href="index.html" id="home">Hjem</a><a href="#">Desserter</a><a href="#">Om oss</a><a href="#">Kontakt</a>
+  </div>
+
+  <section class="recipe-detail">
+    <div class="recipe-header">
+      <img src="bilder/kanelsnurrer.jpeg" alt="Luftige kanelsnurrer">
+      <div class="recipe-info">
+        <h2>Luftige Kanelsnurrer</h2>
+        <p>Disse kanelsnurrene er elsket av alle både myke, saftige og fulle av smak. en familie favoritt!</p>
+        <div class="recipe-meta">
+          <span>⏱️ 2 timer</span>
+          <span>👥 16 stykker</span>
+          <span>🌟 Middels</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-content">
+      <div class="ingredients">
+        <h3>Ingredienser</h3>
+        <h4>Deig:</h4>
+        <ul>
+          <li>5 dl melk</li>
+          <li>50g gjær</li>
+          <li>100g sukker</li>
+          <li>1 ts salt</li>
+          <li>1 egg</li>
+          <li>100g smør (smeltet)</li>
+          <li>800g glutenfritt mel</li>
+        </ul>
+        <h4>Fyll:</h4>
+        <ul>
+          <li>100g smør (romtemperert)</li>
+          <li>100g sukker</li>
+          <li>2 ss kanel</li>
+        </ul>
+        <h4>Pensling:</h4>
+        <ul>
+          <li>1 egg (pisket)</li>
+          <li>Perlesukker til drysing</li>
+        </ul>
+      </div>
+
+      <div class="instructions">
+        <h3>Fremgangsmåte</h3>
+        <ol>
+          <li>Varm melken til fingervarme og løs opp gjæren.</li>
+          <li>Rør inn sukker, salt, egg og smeltet smør.</li>
+          <li>Arbeid inn det glutenfrie melet litt om gangen til du får en smidig deig.</li>
+          <li>La deigen heve på varmt sted i ca. 1 time til dobbel størrelse.</li>
+          <li>Kjevle deigen ut til et rektangel på ca. 40x30 cm.</li>
+          <li>Smør det romtempererte smøret utover deigen.</li>
+          <li>Bland sukker og kanel og dryss over smøret.</li>
+          <li>Rull deigen sammen fra langsiden og skjær i 16 skiver.</li>
+          <li>Legg skivene på bakepapir og la heve i 30 minutter.</li>
+          <li>Pensle med egg og dryss med perlesukker.</li>
+          <li>Bak på 225°C i 10-12 minutter til gylne.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe-tips">
+      <h3>Tips</h3>
+      <p>For ekstra luftige kanelsnurrer, sørg for at melken ikke er for varm når du løser opp gjæren. La deigen få god tid til å heve - dette er nøkkelen til perfekte resultater!</p>
+    </div>
+  </section>
+
+  <style>
+    .recipe-detail {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .recipe-header {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+
+    .recipe-header img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    .recipe-info h2 {
+      color: #d25f45;
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .recipe-info p {
+      margin-bottom: 1rem;
+      color: rgb(111, 96, 96);
+    }
+
+    .recipe-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .recipe-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .ingredients, .instructions {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: rgb(111, 96, 96);
+    }
+
+    .ingredients h3, .instructions h3 {
+      color: #d25f45;
+      margin-top: 0;
+    }
+
+    .ingredients h4, .instructions h4 {
+      color: #d25f45;
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .ingredients ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+    .ingredients li {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .instructions ol {
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .instructions li {
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+    }
+
+    .recipe-tips {
+      background-color: #f3d1c1;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+
+    .recipe-tips h3 {
+      color: #d25f45;
+      margin-top: 0;
+    }
+
+    #linker a {
+      color: rgb(111, 96, 96);
+      text-decoration: none;
+    }
+
+    #linker a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .recipe-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .recipe-header img {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .recipe-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</body>
+</html>
